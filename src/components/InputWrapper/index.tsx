@@ -9,23 +9,23 @@ type InputProps =  InputHTMLAttributes<HTMLInputElement>;
 
 export const InputWrapper = ({...props}:InputProps) =>{
     const [task,setTask] = useState<string>('');
-    const {tasks,setTasks} = useTasks()
-    const [isInactive,setIsActive] = useState(true)
+    const {tasks,setTasks} = useTasks();
+    const [isInactive,setIsActive] = useState(true);
     
     
     const handleWithInputTask = (event:React.ChangeEvent<HTMLInputElement>) => {
         if(event.currentTarget.value){
-            setIsActive(false)
+            setIsActive(false);
             setTask(event.currentTarget.value);
         }
         else{
-            setIsActive(true)
+            setIsActive(true);
         }
          
             
     }
     const handleWithCreateTask = () =>{
-        return setTasks([...tasks,{id:uuidv4(), task:task}])
+        return setTasks([...tasks,{id:uuidv4(), task:task}]);
     }
  
     return(
