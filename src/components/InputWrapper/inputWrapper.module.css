@@ -1,0 +1,26 @@
+.inputWrapper{
+    width: 48.7%;
+    height: 6.6%;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-inline: auto;
+    margin-bottom:30px ;
+    position: absolute;
+    top: 10.9375rem;
+    left: 25rem;
+}
+
+.inputTask{
+    background-color: var(--gray-500);
+    border:1px solid var(--gray-700);
+    border-radius: 0.5rem;
+    width: 100%;
+    color: var(--gray-100);
+    padding: 1rem;
+    transition:border 150ms ease-in;
+}
+
+.inputTask:hover,.inputTask:focus-within{
+    border:1px solid var(--purple-dark)
+}

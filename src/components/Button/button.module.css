@@ -1,0 +1,23 @@
+
+
+.btn{
+    width:5.625rem ;
+    height:3.25rem ;
+    background-color: var(--blue-dark);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    gap: 0.5rem;
+    transition: background-color 150ms ease-out;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+}
+
+.btnImg{
+    height: 1rem;
+    width: 1rem;
+}
